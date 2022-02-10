@@ -1,0 +1,306 @@
+[
+    {
+        "__comment": "This station is a combination of the following stations: Hauptbahnhof, Jahnplatz, Rathaus and Landgericht (just the lines 1 & 2)",
+        "title": "Innenstadt",
+        "stations": ["Siegfriedplatz", "Wittekindstraße", 
+                    "Sudbrackstraße", "Beckhausstraße", 
+                    "August-Schröder-Straße", 
+                    "August-Bebel-Straße", "Adenauerplatz"]
+    },
+
+    {
+        "title": "Lohmannshof",
+        "stations": ["Wellensiek"]
+    },
+
+    {
+        "title": "Wellensiek",
+        "stations": ["Universität", "Lohmannshof"]
+    },
+
+    {
+        "title": "Universität",
+        "stations": ["Bültmannshof", "Universität"]
+    },
+
+    {
+        "title": "Graf-von-Stauffenberg-Straße",
+        "stations": ["Rudolf-Oetker-Straße", "Universität"]
+    },
+
+    {
+        "title": "Rudolf-Oetker-Straße",
+        "stations": ["Graf-von-Stauffenberg-Straße", "Siegfriedplatz"]
+    },
+
+    {
+        "title": "Siegfriedplatz",
+        "stations": ["Graf-von-Stauffenberg-Straße", "Hauptbahnhof"]
+    },
+
+    {
+        "title": "Babenhausen Süd",
+        "stations": ["Voltmannstraße"]
+    },
+
+    {
+        "title": "Voltmannstraße",
+        "stations": ["Babenhausen Süd", "Koblenzer Straße"]
+    },
+
+    {
+        "title": "Koblenzer Straße",
+        "stations": ["Voltmannstraße", "Lange Straße"]
+    },
+
+
+    {
+        "title": "Lange Straße",
+        "stations": ["Koblenzer Straße", "Auf der Hufe"]
+    },
+
+    {
+        "title": "Auf der Hufe",
+        "stations": ["Lange Straße", "Nordpark"]
+    },
+
+    {
+        "title": "Nordpark",
+        "stations": ["Auf der Hufe", "Wittekindstraße"]
+    },
+
+    {
+        "title": "Wittekindstraße",
+        "stations": ["Nordpark", "Hauptbahnhof"]
+    },
+
+    {
+        "title": "August-Schröder-Straße",
+        "stations": ["Rathaus", "Ravensberger Straße"]
+    },
+
+    {
+        "title": "Ravensberger Straße",
+        "stations": ["August-Schröder-Straße", "Krankenhaus Mitte"]
+    },
+
+    {
+        "title": "Krankenhaus Mitte",
+        "stations": ["Ravensberger Straße", "Oststraße"]
+    },
+
+    {
+        "title": "Oststraße",
+        "stations": ["Krankenhaus Mitte", "Hartlager Weg"]
+    },
+
+    {
+        "title": "Hartlager Weg",
+        "stations": ["Oststraße", "Sieker Mitte"]
+    },
+
+    {
+        "title": "Sieker Mitte",
+        "stations": ["Hartlager Weg", "Luther-Kirche"]
+    },
+
+    {
+        "title": "Luther-Kirche",
+        "stations": ["Sieker Mitte", "Roggenkamp"]
+    },
+
+    {
+        "title": "Roggenkamp",
+        "stations": ["Luther-Kirche", "Elpke"]
+    },
+
+    {
+        "title": "Elpke",
+        "stations": ["Roggenkamp", "Gesamtschule Stieghorst"]
+    },
+
+    {
+        "title": "Gesamtschule Stieghorst",
+        "stations": ["Elpke", "Stieghorst"]
+    },
+
+    {
+        "title": "Stieghorst",
+        "stations": ["Gesamtschule Stieghorst"]
+    },
+
+    {
+        "title": "Schildesche",
+        "stations": ["Heidegärten"]
+    },
+
+    {
+        "title": "Heidegärten",
+        "stations": ["Schildesche", "Kattenkamp"]
+    },
+
+    {
+        "title": "Kattenkamp",
+        "stations": ["Heidegärten", "Deciusstraße"]
+    },
+
+    {
+        "title": "Deciusstraße",
+        "stations": ["Kattenkamp", "Johannesstift"]
+    },
+
+    {
+        "title": "Johannesstift",
+        "stations": ["Deciusstraße", "Sudbrackstraße"]
+    },
+
+    {
+        "title": "Sudbrackstraße",
+        "stations": ["Johannesstift", "Hauptbahnhof"]
+    },
+
+    {
+        "title": "Adenauerplatz",
+        "stations": ["Bethel", "Landgericht"]
+    },
+
+    {
+        "title": "Bethel",
+        "stations": ["Adenauerplatz", "Friedrich-List-Straße"]
+    },
+
+    {
+        "title": "Friedrich-List-Straße",
+        "stations": ["Bethel", "Eggeweg"]
+    },
+
+    {
+        "title": "Eggeweg",
+        "stations": ["Brackwede Bahnhof", "Friedrich-List-Straße"]
+    },
+
+    {
+        "title": "Brackwede Bahnhof",
+        "stations": ["Eggeweg", "Gaswerkstraße"]
+    },
+
+    {
+        "title": "Gaswerkstraße",
+        "stations": ["Brackwede Bahnhof", "Normannenstraße"]
+    },
+
+    {
+        "title": "Normannenstraße",
+        "stations": ["Gaswerkstraße", "Brackwede Kirche"]
+    },
+
+    {
+        "title": "Brackwede Kirche",
+        "stations": ["Normannenstraße", "Windelsbleicher Straße"]
+    },
+
+    {
+        "title": "Windelsbleicher Straße",
+        "stations": ["Brackwede Kirche", "Rosenhöhe"]
+    },
+
+    {
+        "title": "Rosenhöhe",
+        "stations": ["Windelsbleicher Straße", "Sennefriedhof"]
+    },
+
+    {
+        "title": "Sennefriedhof",
+        "stations": ["Rosenhöhe", "Senne"]
+    },
+
+    {
+        "title": "Senne",
+        "stations": ["Sennefriedhof"]
+    },
+
+    {
+        "title": "Altenhagen",
+        "stations": ["Buschbachtal"]
+    },
+
+    {
+        "title": "Buschbachtal",
+        "stations": ["Altenhagen", "Milse"]
+    },
+
+    {
+        "title": "Milse",
+        "stations": ["Buschbachtal", "Schelpmilser Weg"]
+    },
+
+    {
+        "title": "Schelpmilser Weg",
+        "stations": ["Milse", "Baumheide"]
+    },
+
+    {
+        "title": "Baumheide",
+        "stations": ["Schelpmilser Weg", "Seidenstickerstraße"]
+    },
+
+    {
+        "title": "Seidenstickerstraße",
+        "stations": ["Baumheide", "Schüco"]
+    },
+
+    {
+        "title": "Schüco",
+        "stations": ["Seidenstickerstraße", "Ziegelstraße"]
+    },
+
+    {
+        "title": "Ziegelstraße",
+        "stations": ["Schüco", "Finkenstraße"]
+    },
+
+    {
+        "title": "Finkenstraße",
+        "stations": ["Ziegelstraße", "Schillerstraße"]
+    },
+
+    {
+        "title": "Schillerstraße",
+        "stations": ["Finkenstraße", "Stadtheider Straße"]
+    },
+
+    {
+        "title": "Stadtheider Straße",
+        "stations": ["Schillerstraße", "Beckhausstraße"]
+    },
+
+    {
+        "title": "Beckhausstraße",
+        "stations": ["Stadtheider Straße", "Hauptbhanhof"]
+    },
+
+    {
+        "title": "August-Bebel-Straße",
+        "stations": ["Landgericht", "Teutoburger Straße"]
+    },
+
+    {
+        "title": "Teutoburger Straße",
+        "stations": ["August-Bebel-Straße", "Mozartstraße"]
+    },
+
+    {
+        "title": "Mozartstraße",
+        "stations": ["Teutoburger Straße", "Prießallee"]
+    },
+
+    {
+        "title": "Prießallee",
+        "stations": ["Sieker", "Mozartraße"]
+    },
+
+    {
+        "title": "Sieker",
+        "stations": ["Prießallee"]
+    }
+]
