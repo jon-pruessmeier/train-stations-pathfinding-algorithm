@@ -5,17 +5,6 @@ The pathfinder needs objects with format {"title": "", "stations": [""]}.
 
 class Pathfinder {
 
-    /**
-     * 
-     * @param {*} start the start station
-     * @param {*} end the end station
-     * @param {*} plan the plan of the stations
-     * @returns a list of stations which are the path
-     */
-    static getPath(start, end, plan) {
-        return null;
-    }
-
 
     /**
      * 
@@ -29,32 +18,31 @@ class Pathfinder {
                 return plan[i];
             }
         }
-        return null;
+        return {"title": "", "stations": [""]}
     }
 
 
     /**
      * checks if a station has unvisited next stations left
-     */
+     
     static isEndStation(station, prev, plan){
-        return (this.getNextStations(station, prev, plan) === [])
+        const isEndStation = (this.getNextStations(station, prev, plan) === []);
+        return isEndStation;
     }
+    */
 
 
     /**
      * gets all unvisited stations of the current station
      */
     static getNextStations(currentStation, prev, plan){
-        let next;
+        let next = [];
         if (prev) {
-            next = currentStation["stations"].map( station => {
-                if (station !== prev){
-                    return this.getStation(plan, station);
-                }
-            })
-            return 
+            const filteredNext = currentStation.stations.filter( station => station !== prev.title);
+
+            next = filteredNext.map(station => this.getStation(station, plan));
         } else {
-            next = currentStation.stations.map( station => this.getStation(plan, station));
+            next = currentStation.stations.map( station => this.getStation(station, plan));
         }
         return next;
     }
@@ -63,34 +51,54 @@ class Pathfinder {
     /**
      * recursive function
      */
-    static find(current, end, prev, plan, answer){
+    static find(start, end, plan){
 
-        let tempAnswer = answer.map(x => x);
-        tempAnswer.push(current.title);
+        let current = this.getStation(start, plan);
+        const solution = [];
+        const visited = [];
+        let finished = false;
 
-        if (current.title === end){
-            return tempAnswer;
-        }
+        while (!finished){
 
-        if (this.isEndStation(current, prev, plan)){
-            return null;
-        }
+            const title = current.title;
+            console.log(`Jetzige Station: ${title}`);
 
-        const nextStations = this.getNextStations(current, prev, plan);
-        console.log(current.title);
-        let solution;
+            if (!visited.includes(title)){
+                visited.push(title);
+            }
+            
+            if (title === end || visited.length === plan.length || title === ""){
+                solution.push(title);
+                finished = true;
+            } else {
 
-        for (const next in nextStations){
-            solution = this.find(next, end, current, plan, tempAnswer);
-            if (solution !== []){
-                return solution;
+               const neighbours = current.stations.filter(station => !visited.includes(station));
+               console.log(`Nachbarn verfügbar: ${neighbours.length}`);
+
+               if (current.title == "Prießallee"){
+                console.log(neighbours);
             }
 
+
+                if (neighbours.length === 0){
+                    current = this.getStation(solution.pop(), plan);
+                    console.log("IM IF STATEMENT");
+                } else {
+                    solution.push(title);
+                    current = this.getStation(neighbours[0], plan);
+                    
+                }  
+            }
+
+            console.log(`Nächste Station: ${current.title}`);
+            console.log('--------------------------------------')
         }
+        
 
         return solution;
 
     }
+    
 
 }
 
