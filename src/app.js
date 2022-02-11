@@ -1,21 +1,14 @@
-/*const express = require('express');
+const express = require('express');
 
 const app = express();
+const bielefeldRouter = require('./example_bielefeld/stations_bielefeld');
 
-const PORT = 8092;
+const PORT = 6070;
 
-
-
-
-
+app.use('/bielefeld', bielefeldRouter);
 
 app.listen(PORT, () => {
     console.log(`Server listens on port ${PORT}`);
-}) */
+})
 
-const Pathfinder = require("./pathfinder");
-const plan = require("./example_bielefeld/stations_bielefeld.json");
-const start = Pathfinder.getStation("Schildesche", plan);
-console.log(start);
-const path = Pathfinder.find(start, "Innenstadt", null ,plan, []);
-console.log(path);
+
