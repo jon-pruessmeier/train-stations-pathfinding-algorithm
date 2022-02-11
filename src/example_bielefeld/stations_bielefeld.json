@@ -20,12 +20,18 @@
 
     {
         "title": "Universität",
-        "stations": ["Bültmannshof", "Universität"]
+        "stations": ["Bültmannshof", "Wellensiek"]
+    },
+
+    {
+        "title": "Bültmannshof",
+        "stations": ["Graf-von-Stauffenberg-Straße", "Universität"]
+
     },
 
     {
         "title": "Graf-von-Stauffenberg-Straße",
-        "stations": ["Rudolf-Oetker-Straße", "Universität"]
+        "stations": ["Rudolf-Oetker-Straße", "Bültmannshof"]
     },
 
     {
@@ -35,7 +41,7 @@
 
     {
         "title": "Siegfriedplatz",
-        "stations": ["Graf-von-Stauffenberg-Straße", "Hauptbahnhof"]
+        "stations": ["Rudolf-Oetker-Straße", "Innenstadt"]
     },
 
     {
@@ -71,12 +77,12 @@
 
     {
         "title": "Wittekindstraße",
-        "stations": ["Nordpark", "Hauptbahnhof"]
+        "stations": ["Nordpark", "Innenstadt"]
     },
 
     {
         "title": "August-Schröder-Straße",
-        "stations": ["Rathaus", "Ravensberger Straße"]
+        "stations": ["Innenstadt", "Ravensberger Straße"]
     },
 
     {
@@ -156,12 +162,12 @@
 
     {
         "title": "Sudbrackstraße",
-        "stations": ["Johannesstift", "Hauptbahnhof"]
+        "stations": ["Johannesstift", "Innenstadt"]
     },
 
     {
         "title": "Adenauerplatz",
-        "stations": ["Bethel", "Landgericht"]
+        "stations": ["Bethel", "Innenstadt"]
     },
 
     {
@@ -276,12 +282,12 @@
 
     {
         "title": "Beckhausstraße",
-        "stations": ["Stadtheider Straße", "Hauptbhanhof"]
+        "stations": ["Stadtheider Straße", "Innenstadt"]
     },
 
     {
         "title": "August-Bebel-Straße",
-        "stations": ["Landgericht", "Teutoburger Straße"]
+        "stations": ["Innenstadt", "Teutoburger Straße"]
     },
 
     {
@@ -296,7 +302,7 @@
 
     {
         "title": "Prießallee",
-        "stations": ["Sieker", "Mozartraße"]
+        "stations": ["Sieker", "Mozartstraße"]
     },
 
     {
