@@ -5,6 +5,7 @@ const bielefeldRouter = express.Router();
 const planBielefeld = require('./stations_bielefeld.json');
 
 bielefeldRouter.get('/', (req, res, next) => {
+    console.log("accessed data from /biefeld")
     res.status(200).send(planBielefeld);
 })
 
