@@ -4,27 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./res/index.css">
+    <title>Stadtbahn-Projekt</title>
 </head>
 <body>
     <div class="background">
         <div class="content">
-            <h1>BIELFELD PLAN</h1>
-            <img src="./res/bielefeld_liniennetz.svg" width="800" height="800">
-            <div class="answer">
-                <div class="selects">
-                    <select name="stationen" id="start">
+            <h1>Finde deinen Weg durch das Bielefelder Stadtbahnnetz!</h1>
+            <p>
+                In diesem Projekt kann der Weg von einer Bielefelder Stadtbahnstation zur Nächsten abgefragt werden.
+                Der Lösungsweg wird mithilfe eines Backtracking-Algorithmus berechnet. 
+                Hierzu sind die Stationen verlinkt, sodass das Netz als eine
+                Graphstruktur abgebildet wird. Berechnet wird der Weg auf dem dazugehörigen Server, welcher mittels Node/Express erstellt wurde.
+                <br>
+                <strong>Achtung: Die Station Innenstadt bildet die Stationen Hauptbahnhof, Jahnplatz, Rathaus und Landgericht zusammen ab. </strong>
+            </p>
+            <div class="mid">
+                <img src="./res/bielefeld_liniennetz.svg">
+                <div class="answer">
 
-                    </select>
+                    <div class="selects">
+                        <div class="inputs">
+                            <h3>Start:</h5>
+                            <select name="stationen" id="start">
 
-                    <select name="stationen" id="end">
+                        </select>
+                        </div>
 
-                    </select>
+                        <div class="inputs">
+                            <h3>End:</h5>
+                            <select name="stationen" id="end">
+
+                            </select> 
+                        </div>
+                        
+                    </div>
+
+                    <button type="button" id="btn">Click me!</button>
+                    <pre id="answerText"></pre>
                 </div>
-
-                <button type="button">Click me!</button>
-                <p id="answerText"></p>
             </div>
+            
 
         </div>
 

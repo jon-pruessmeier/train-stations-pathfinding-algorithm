@@ -4,7 +4,7 @@ const app = express();
 const bielefeldRouter = require('./example_bielefeld/stations_bielefeld');
 const indexHTML = '\\frontend\\index.html';
 
-const PORT = 6070;
+const PORT = process.env.PORT || 6070;
 
 app.get('/', (req, res, next) => {
     res.sendFile(`${__dirname + indexHTML}`);
