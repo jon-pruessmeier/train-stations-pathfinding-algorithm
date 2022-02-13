@@ -15,7 +15,7 @@ bielefeldRouter.get('/:start/:end', (req, res, next) => {
     console.log(`Start: ${start}`);
     console.log(`End: ${end}`);
 
-    const way = Pathfinder.find(start, end, planBielefeld);
+    const way = Pathfinder.find(start, end, planBielefeld.list);
 
     if (way.includes(start) && way.includes(end)){
         res.status(200).send(way);
