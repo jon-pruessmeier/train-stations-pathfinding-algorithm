@@ -7,7 +7,7 @@ const options = {
   }
 }
 
-const stationsJSON = fetch(url, options)
+const stationsPromise = fetch(url, options)
           .then((response) => {
             return response.json();
           })
@@ -18,5 +18,11 @@ const stationsJSON = fetch(url, options)
             console.log(err);
           })
 
-const stationsObj = JSON.parse(stationsJSON);
-console.log(typeof stationsObj);
+async function getStations(){
+  const result = await stationsPromise;
+  console.log(result);
+  return result.data;
+}
+
+const stations = getStations();
+console.log(stations);
