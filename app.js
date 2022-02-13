@@ -1,8 +1,9 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 const bielefeldRouter = require('./example_bielefeld/stations_bielefeld');
-const indexHTML = '\\frontend\\index.html';
+const indexHTML = '/frontend/index.html';
 
 const PORT = process.env.PORT || 6070;
 
@@ -11,7 +12,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.get('/res/:name', (req, res, next) => {
-    res.sendFile(`${__dirname + '\\frontend\\res\\' + req.params.name}`);
+    res.sendFile(`${__dirname + '/frontend/res/' + req.params.name}`);
 });
 
 app.use('/bielefeld', bielefeldRouter);
